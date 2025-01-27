@@ -6,7 +6,15 @@
 // Siga os comentários para implementar cada parte do desafio.
 //Teste larissa
 
-int main() {
+int main() { printf("Desafio SuperTrunfo\n");
+    char estado[20] = "sao paulo"
+    char[] codigo da carta = "A01"
+    char[] nome da cidade = 
+    int Populacao =
+    float Area em km =
+    float PIB = 
+    int numero de pontos turisticos =
+
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
     
