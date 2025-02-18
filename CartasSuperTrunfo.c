@@ -8,28 +8,28 @@
 
 int main() { printf("Desafio SuperTrunfo\n");
 
-
-    char  nome_do_estado = 'sao_paulo'  ;
-    char codigo_da_carta = 'A01';
-    char nome_da_cidade ='marica' ;
-    int populacao = 3000;
-    float area_em_km =1521.11 ;
+printf("edigard carta\n");
+    char nome_do_estado[12] = "sao_paulo"  ;
+    char codigo_da_carta[6] = "A01" ;
+    char nome_da_cidade[10] = "marica"  ;
+    int populacao = 3000 ;
+    float area_em_km = 1521.11 ;
     float pib = 699.28 ;
     int numero_de_pontos_turisticos = 50 ;
 
-    printf("%c = nome_do_estado\n",nome_do_estado);
+    printf("Nome do estado = %s \n",nome_do_estado);
 
-    printf("%c = codigo_da_carta\n",codigo_da_carta);
+    printf("Código da carta = %s \n",codigo_da_carta);
 
-    printf("%c = nome_da_cidade\n",nome_da_cidade);
+    printf("Nome da cidade = %s \n",nome_da_cidade);
 
-    printf("%d = Populacao\n",populacao);
+    printf("Populacão = %d \n",populacao);
 
-    printf("%f = Area_em_km\n",area_em_km);
+    printf("Area em KM = %f \n",area_em_km);
 
-    printf("%f = pib \n",pib);
+    printf("PIB = %f \n",pib);
 
-    printf ("%d= numero_de_pontos_turisticos\n",numero_de_pontos_turisticos);
+    printf ("Numero de pontos turísticos = %d \n",numero_de_pontos_turisticos);
 
 
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
