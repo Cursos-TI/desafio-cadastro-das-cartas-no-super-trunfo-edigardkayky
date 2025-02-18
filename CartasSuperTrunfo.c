@@ -31,6 +31,37 @@ printf("edigard carta\n");
 
     printf("Numero de pontos turísticos = %d \n",numero_de_pontos_turisticos);
 
+    //inicio da criação de cartas(scanf).
+
+    printf("Agora é a sua vez!\n");
+
+    printf("DIGITE O NOME DO SEU ESTADO:");
+    
+    scanf("%s", &nome_do_estado);
+
+    printf("seu nome é: %s\n",nome_do_estado);
+
+    printf("DIGITE O CODIGO DA CARTA:");
+    printf("(exemplo:A01,B07,W92)\n");
+
+    scanf("%s", &codigo_da_carta);
+
+    printf("codigo da sua carta:%s\n",codigo_da_carta);
+
+    printf("DIGITE O NOME DA CIDADE:");
+
+    scanf("%s", &nome_da_cidade);
+
+    printf("o nome da cidade:%s\n", nome_da_cidade);
+
+    printf("DIGITE A POPULAÇÃO DA CIDADE:");
+
+    scanf("%d", &populacao);
+
+    printf("A POPULAÇÃO:%d\n", populacao);
+
+    
+
 
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
