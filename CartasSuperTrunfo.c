@@ -25,11 +25,11 @@ printf("edigard carta\n");
 
     printf("Populacão = %d \n",populacao);
 
-    printf("Area em KM = %f \n",area_em_km);
+    printf("Area em KM = %.1f \n",area_em_km);
 
-    printf("PIB = %fmilhões \n",pib);
+    printf("PIB = %.1fmilhões \n",pib);
 
-    printf ("Numero de pontos turísticos = %d \n",numero_de_pontos_turisticos);
+    printf("Numero de pontos turísticos = %d \n",numero_de_pontos_turisticos);
 
 
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
