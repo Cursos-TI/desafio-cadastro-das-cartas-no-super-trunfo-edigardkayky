@@ -39,7 +39,7 @@ printf("edigard carta\n");
     
     scanf("%s", &nome_do_estado);
 
-    printf("seu nome é: %s\n",nome_do_estado);
+    printf("seu estado é: %s\n",nome_do_estado);
 
     printf("DIGITE O CODIGO DA CARTA:");
     printf("(exemplo:A01,B07,W92)\n");
