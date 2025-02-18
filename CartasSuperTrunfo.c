@@ -9,13 +9,13 @@
 int main() { printf("Desafio SuperTrunfo\n");
 
 printf("edigard carta\n");
-    char nome_do_estado[12] = "sao_paulo"  ;
+    char nome_do_estado[20] = "rio_de_janeiro"  ;
     char codigo_da_carta[6] = "A01" ;
-    char nome_da_cidade[10] = "marica"  ;
-    int populacao = 3000 ;
-    float area_em_km = 1521.11 ;
-    float pib = 699.28 ;
-    int numero_de_pontos_turisticos = 50 ;
+    char nome_da_cidade[25] = "Sao_goncalo"  ;
+    int populacao = 896744 ;
+    float area_em_km = 249.4 ;
+    float pib = 20.3 ;
+    int numero_de_pontos_turisticos = 20 ;
 
     printf("Nome do estado = %s \n",nome_do_estado);
 
@@ -27,7 +27,7 @@ printf("edigard carta\n");
 
     printf("Area em KM = %f \n",area_em_km);
 
-    printf("PIB = %f \n",pib);
+    printf("PIB = %fmilhões \n",pib);
 
     printf ("Numero de pontos turísticos = %d \n",numero_de_pontos_turisticos);
 
