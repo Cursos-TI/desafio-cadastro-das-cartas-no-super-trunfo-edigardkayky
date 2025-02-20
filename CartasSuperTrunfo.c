@@ -29,7 +29,7 @@ printf("edigard carta\n");
 
     printf("PIB = %.1fmilhões \n",pib);
 
-    printf("Numero de pontos turísticos = %d \n",numero_de_pontos_turisticos);
+    printf("Numero de pontos turísticos = %d \n", numero_de_pontos_turisticos);
 
     //inicio da criação de cartas(scanf).
 
@@ -39,14 +39,14 @@ printf("edigard carta\n");
     
     scanf("%s", &nome_do_estado);
 
-    printf("seu estado é: %s\n",nome_do_estado);
+    printf("seu estado é: %s\n", nome_do_estado);
 
     printf("DIGITE O CODIGO DA CARTA:");
     printf("(exemplo:A01,B07,W92)\n");
 
     scanf("%s", &codigo_da_carta);
 
-    printf("codigo da sua carta:%s\n",codigo_da_carta);
+    printf("codigo da sua carta:%s\n", codigo_da_carta);
 
     printf("DIGITE O NOME DA CIDADE:");
 
@@ -58,7 +58,42 @@ printf("edigard carta\n");
 
     scanf("%d", &populacao);
 
-    printf("A POPULAÇÃO:%d\n", populacao);
+    printf("a população:%d\n", populacao);
+
+    printf("DIGITE A AREA EM 'KM':");
+
+    scanf("%f", &area_em_km);
+
+    printf("sua area em KM:%f\n", area_em_km);
+
+    printf("digite o PIB da cidade:");
+
+    scanf("%f", &pib);
+
+    printf("o PIB da sua cidade:%f\n",pib);
+
+    printf("digite o numero TOTAL de pontos turisticos da cidade:");
+
+    scanf("%d",&numero_de_pontos_turisticos);
+
+    printf("o numero total de pontos turísticos:%d",numero_de_pontos_turisticos);
+
+    printf("---+ SUA CARTA COMPLETA +---\n");
+
+    // vms ver
+    printf("Nome do estado = %s \n",nome_do_estado);
+
+    printf("Código da carta = %s \n",codigo_da_carta);
+
+    printf("Nome da cidade = %s \n",nome_da_cidade);
+
+    printf("Populacão = %d \n",populacao);
+
+    printf("Area em KM = %.1f \n",area_em_km);
+
+    printf("PIB = %.1fmilhões \n",pib);
+
+    printf("Numero de pontos turísticos = %d \n", numero_de_pontos_turisticos);
 
     
 
