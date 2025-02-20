@@ -76,7 +76,7 @@ printf("edigard carta\n");
 
     scanf("%d",&numero_de_pontos_turisticos);
 
-    printf("o numero total de pontos turísticos:%d",numero_de_pontos_turisticos);
+    printf("o numero total de pontos turísticos:%d\n",numero_de_pontos_turisticos);
 
     printf("---+ SUA CARTA COMPLETA +---\n");
 
