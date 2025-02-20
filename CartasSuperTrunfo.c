@@ -7,8 +7,8 @@
 //Teste larissa
 
 int main() { printf("Desafio SuperTrunfo\n");
-
-printf("edigard carta\n");
+printf("-----+BEM VINDO AO JOGO SUPER TRUNFO+-----\n");
+printf("------CARTA DE JOGADOR 1: Edigard------ \n");
     char nome_do_estado[20] = "rio_de_janeiro"  ;
     char codigo_da_carta[6] = "A01" ;
     char nome_da_cidade[25] = "Sao_goncalo"  ;
@@ -33,7 +33,7 @@ printf("edigard carta\n");
 
     //inicio da criação de cartas(scanf).
 
-    printf("Agora é a sua vez!\n");
+    printf("------Agora é a sua vez!-----\n");
 
     printf("DIGITE O NOME DO SEU ESTADO:");
     
