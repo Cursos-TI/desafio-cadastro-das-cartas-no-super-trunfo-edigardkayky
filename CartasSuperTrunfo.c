@@ -1,10 +1,5 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
 
 int main() { printf("Desafio SuperTrunfo\n");
 printf("-----+ BEM VINDO AO JOGO SUPER TRUNFO +-----\n");
@@ -19,7 +14,20 @@ printf("------+ CARTA DE JOGADOR 1: Edigard +------ \n");
     float desidade_pupulacional = populacao / area_em_km ;
     float pib_per_capita = pib / populacao ;
     float SUPER_PODER = populacao + area_em_km + pib + numero_de_pontos_turisticos + desidade_pupulacional + pib_per_capita ;
-    int RESULTADO = SUPER_PODER > SUPER_PODER ;
+
+    //VARIAVEIS DE CARTA DOIS A BAIXO...
+
+    char nome_do_estado2[20] ;
+    char codigo_da_carta2[6]  ;
+    char nome_da_cidade2[25] ;
+    int populacao2   ;
+    float area_em_km2   ;
+    float pib2   ;
+    int numero_de_pontos_turisticos2 ;
+    float desidade_pupulacional2 = populacao2 / area_em_km2 ;
+    float pib_per_capita2 = pib2 / populacao2 ;
+    float SUPER_PODER2 = populacao2 + area_em_km2 + pib2 + numero_de_pontos_turisticos2 + desidade_pupulacional2 + pib_per_capita2 ;
+    int RESULTADO = SUPER_PODER > SUPER_PODER2 ;
 
 
 
@@ -45,77 +53,80 @@ printf("------+ CARTA DE JOGADOR 1: Edigard +------ \n");
 
     //inicio da criação de cartas(scanf).
 
+
+
     printf("------+ Agora é a sua vez! +-----\n");
 
     printf("DIGITE O NOME DO SEU ESTADO:");
     
-    scanf("%s", &nome_do_estado);
+    scanf("%s", &nome_do_estado2);
 
-    printf("seu estado é: %s\n", nome_do_estado);
+    printf("seu estado é: %s\n", nome_do_estado2);
 
     printf("DIGITE O CODIGO DA CARTA:");
     printf("(exemplo:A01,B07,W92)\n");
 
-    scanf("%s", &codigo_da_carta);
+    scanf("%s", &codigo_da_carta2);
 
-    printf("codigo da sua carta:%s\n", codigo_da_carta);
+    printf("codigo da sua carta:%s\n", codigo_da_carta2);
 
     printf("DIGITE O NOME DA CIDADE:");
 
-    scanf("%s", &nome_da_cidade);
+    scanf("%s", &nome_da_cidade2);
 
-    printf("o nome da cidade:%s\n", nome_da_cidade);
+    printf("o nome da cidade:%s\n", nome_da_cidade2);
 
     printf("DIGITE A POPULAÇÃO DA CIDADE:");
 
-    scanf("%d", &populacao);
+    scanf("%d", &populacao2);
 
-    printf("a população:%d\n", populacao);
+    printf("a população:%d\n", populacao2);
 
     printf("DIGITE A AREA EM 'KM':");
 
-    scanf("%f", &area_em_km);
+    scanf("%f", &area_em_km2);
 
-    printf("sua area em KM:%f\n", area_em_km);
+    printf("sua area em KM:%.2f\n", area_em_km2);
 
     printf("digite o PIB da cidade:");
 
-    scanf("%f", &pib);
+    scanf("%f", &pib2);
 
-    printf("o PIB da sua cidade:%f\n",pib);
+    printf("o PIB da sua cidade:%.2f\n",pib2);
 
     printf("digite o numero TOTAL de pontos turisticos da cidade:");
 
-    scanf("%d",&numero_de_pontos_turisticos);
+    scanf("%d",&numero_de_pontos_turisticos2);
 
-    printf("o numero total de pontos turísticos:%d\n",numero_de_pontos_turisticos);
+    printf("o numero total de pontos turísticos:%d\n",numero_de_pontos_turisticos2);
 
     printf("-----+ SUA CARTA COMPLETA +-----\n");
 
     // vms ver
-    printf("Nome do estado = %s \n",nome_do_estado);
 
-    printf("Código da carta = %s \n",codigo_da_carta);
+    printf("Nome do estado = %s \n",nome_do_estado2);
 
-    printf("Nome da cidade = %s \n",nome_da_cidade);
+    printf("Código da carta = %s \n",codigo_da_carta2);
 
-    printf("Populacão = %d \n",populacao);
+    printf("Nome da cidade = %s \n",nome_da_cidade2);
 
-    printf("Area em KM = %.2f \n",area_em_km);
+    printf("Populacão = %d \n",populacao2);
 
-    printf("PIB = %.2fmilhões \n",pib);
+    printf("Area em KM = %.2f \n",area_em_km2);
 
-    printf("Numero de pontos turísticos = %d \n", numero_de_pontos_turisticos);
+    printf("PIB = %.2fmilhões \n",pib2);
 
-    printf("densidade_populacional = %.2f \n", desidade_pupulacional);
+    printf("Numero de pontos turísticos = %d \n", numero_de_pontos_turisticos2);
 
-    printf("pib per capita = %.2f \n",pib_per_capita);
+    printf("densidade_populacional = %.2f \n",desidade_pupulacional2);
 
-    printf("SUPER PODER IGUAL A= %.2f \n",SUPER_PODER);
+    printf("pib per capita = %.2f \n",pib_per_capita2);
+
+    printf("SUPER PODER IGUAL A= %.2f \n",SUPER_PODER2);
 
     printf("____AGORA VAMOS VER O VENCEDOR(se o resultado for '1' vc perdeu, se for '0' você ganhou)____\n");
 
-    printf("resultado = %d",RESULTADO);
+    printf("resultado = %d\n",RESULTADO);
 
 
 
@@ -123,20 +134,6 @@ printf("------+ CARTA DE JOGADOR 1: Edigard +------ \n");
 
 
     
-
-    
-
-
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
 
     return 0;
 }
