@@ -18,6 +18,8 @@ printf("------+ CARTA DE JOGADOR 1: Edigard +------ \n");
     int numero_de_pontos_turisticos = 20 ;
     float desidade_pupulacional = populacao / area_em_km ;
     float pib_per_capita = pib / populacao ;
+    float SUPER_PODER = populacao + area_em_km + pib + numero_de_pontos_turisticos + desidade_pupulacional + pib_per_capita ;
+
 
 
     printf("Nome do estado = %s \n",nome_do_estado);
@@ -28,15 +30,17 @@ printf("------+ CARTA DE JOGADOR 1: Edigard +------ \n");
 
     printf("Populacão = %d \n",populacao);
 
-    printf("Area em KM = %.1f \n",area_em_km);
+    printf("Area em KM = %.2f \n",area_em_km);
 
-    printf("PIB = %.1f \n",pib);
+    printf("PIB = %.2f \n",pib);
 
     printf("Numero de pontos turísticos = %d \n", numero_de_pontos_turisticos);
 
-    printf("densidade_populacional = %.1f \n", desidade_pupulacional);
+    printf("densidade_populacional = %.2f \n", desidade_pupulacional);
 
-    printf("pib per capita = %.1f \n",pib_per_capita);
+    printf("pib per capita = %.2f \n",pib_per_capita);
+
+    printf("SUPER PODER IGUAL A= %.2f \n",SUPER_PODER);
 
     //inicio da criação de cartas(scanf).
 
@@ -96,15 +100,19 @@ printf("------+ CARTA DE JOGADOR 1: Edigard +------ \n");
 
     printf("Populacão = %d \n",populacao);
 
-    printf("Area em KM = %.1f \n",area_em_km);
+    printf("Area em KM = %.2f \n",area_em_km);
 
-    printf("PIB = %.1fmilhões \n",pib);
+    printf("PIB = %.2fmilhões \n",pib);
 
     printf("Numero de pontos turísticos = %d \n", numero_de_pontos_turisticos);
 
-    printf("densidade_populacional = %.1f \n", desidade_pupulacional);
+    printf("densidade_populacional = %.2f \n", desidade_pupulacional);
 
-    printf("pib per capita = %.1f \n",pib_per_capita);
+    printf("pib per capita = %.2f \n",pib_per_capita);
+
+    printf("SUPER PODER IGUAL A= %.2f \n",SUPER_PODER);
+
+    
 
     
 
