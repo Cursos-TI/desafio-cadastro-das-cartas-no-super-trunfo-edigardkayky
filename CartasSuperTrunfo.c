@@ -19,6 +19,7 @@ printf("------+ CARTA DE JOGADOR 1: Edigard +------ \n");
     float desidade_pupulacional = populacao / area_em_km ;
     float pib_per_capita = pib / populacao ;
     float SUPER_PODER = populacao + area_em_km + pib + numero_de_pontos_turisticos + desidade_pupulacional + pib_per_capita ;
+    int RESULTADO = SUPER_PODER > SUPER_PODER ;
 
 
 
@@ -111,6 +112,15 @@ printf("------+ CARTA DE JOGADOR 1: Edigard +------ \n");
     printf("pib per capita = %.2f \n",pib_per_capita);
 
     printf("SUPER PODER IGUAL A= %.2f \n",SUPER_PODER);
+
+    printf("____AGORA VAMOS VER O VENCEDOR(se o resultado for '1' vc perdeu, se for '0' você ganhou)____\n");
+
+    printf("resultado = %d",RESULTADO);
+
+
+
+
+
 
     
 
