@@ -114,7 +114,7 @@ printf("------+ CARTA DE JOGADOR 1: Edigard +------ \n");
 
     printf("Area em KM = %.2f \n",area_em_km2);
 
-    printf("PIB = %.2fmilhões \n",pib2);
+    printf("PIB = %.2f \n",pib2);
 
     printf("Numero de pontos turísticos = %d \n", numero_de_pontos_turisticos2);
 
@@ -127,6 +127,12 @@ printf("------+ CARTA DE JOGADOR 1: Edigard +------ \n");
     printf("____AGORA VAMOS VER O VENCEDOR(se o resultado for '1' vc perdeu, se for '0' você ganhou)____\n");
 
     printf("resultado = %d\n",RESULTADO);
+
+    if (pib > pib2) {
+        printf("CARTA 1 GANHOU!\n");}
+       else {
+        printf("CARTA 2 GANHOU!\n");
+      }
 
 
 
