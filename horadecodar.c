@@ -19,11 +19,30 @@ EscolhaComputador = rand() % 3 + 1 ;
 switch (EscolhaJogador)
 {
 case 1:
-    printf("")
+    printf("Jogador: Pedra - \n");
+    break;
+case 2:
+    printf("Jogador: papel - \n");
+    break;
+case 3:
+    printf("Jogador: tesoura - \n");
+    break;
+default:
+ printf("opção invalida\n");
+    break;
+    switch (EscolhaComputador)
+{
+case 1:
+    printf("computador: Pedra\n");
+    break;
+case 2:
+    printf("computador: papel\n");
+    break;
+case 3:
+    printf("computador: tesoura\n");
     break;
 
-default:
-    break;
+    
 }
 
 
