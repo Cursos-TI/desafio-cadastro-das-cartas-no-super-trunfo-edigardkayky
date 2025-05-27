@@ -30,29 +30,41 @@ case 3:
 default:
  printf("opção invalida\n");
     break;
+}
     switch (EscolhaComputador)
+
 {
-case 1:
+case 1 :
     printf("computador: Pedra\n");
     break;
-case 2:
+case 2 :
     printf("computador: papel\n");
     break;
-case 3:
+case 3 :
     printf("computador: tesoura\n");
-    break;
-
-    
+    break;  
 }
 
-
-
-
-
-
-
-
-
-
-
+    if (EscolhaComputador == EscolhaJogador)
+    {
+        printf("***jogo empatou!***\n");
+    }
+    else if ((EscolhaJogador == 1) && (EscolhaComputador == 3 )||
+            (EscolhaJogador == 2) && (EscolhaComputador == 1 )||
+            (EscolhaJogador == 3) && (EscolhaComputador == 2 )) 
+    {
+        printf("***Parabens vc venceu!***\n" );
+    }
+    
+    
+      else 
+      {
+        printf("***vc perdeu!***\n" ); 
+      }
+       
+      
+      
+    return 0;
+    
+    
 }
