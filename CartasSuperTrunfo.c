@@ -1,9 +1,13 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 
 int main() { printf("Desafio SuperTrunfo\n");
 printf("-----+ BEM VINDO AO JOGO SUPER TRUNFO +-----\n");
 printf("------+ CARTA DE JOGADOR 1: Edigard +------ \n");
+    int EscolhaJogador, EscolhaComputador;
+srand(time(0));
     char nome_do_estado[20] = "rio_de_janeiro"  ;
     char codigo_da_carta[6] = "A01" ;
     char nome_da_cidade[25] = "Sao_goncalo"  ;
@@ -128,11 +132,44 @@ printf("------+ CARTA DE JOGADOR 1: Edigard +------ \n");
 
     printf("resultado = %d\n",RESULTADO);
 
-    if (pib > pib2) {
-        printf("CARTA 1 GANHOU!\n");}
-       else {
-        printf("CARTA 2 GANHOU!\n");
+
+
+
+
+
+    printf("+++ ESCOLHA UMA OPÇÃO PARA DUELAR +++\n");
+printf("escolha uma opção\n");
+
+printf("PRESSIONE '1' PARA PIB\n");
+printf("PRESSIONE '2' PARA SUPER PODER\n");
+
+scanf("%d", &EscolhaJogador);
+
+switch (EscolhaJogador)
+{
+case 1:
+    printf("Jogador: PIB - \n");
+    break;
+case 2:
+    printf("Jogador: SUPER PODER - \n");
+    break;
+
+    default:
+ printf("opção invalida\n");
+    break;
+
+
+
+    
+    
+    
+      
+    
+    
+    
+    
       }
+    }
 
 
 
