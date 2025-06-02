@@ -148,10 +148,37 @@ scanf("%d", &EscolhaJogador);
 switch (EscolhaJogador)
 {
 case 1:
-    printf("Jogador: PIB - \n");
+     if (pib == pib2)
+     {
+        printf("!!! pib empatou!!!\n");
+     }
+
+     if  (pib > pib2)
+     {
+        printf("!!!voce perdeu!!!\n");
+     }
+
+     if (pib < pib2)
+     {
+        printf("!!voce ganhou!!\n");
+     }
+
     break;
 case 2:
-    printf("Jogador: SUPER PODER - \n");
+    if (SUPER_PODER == SUPER_PODER2)
+     {
+        printf("!!! super poder empatou!!!\n");
+     }
+
+     if  (SUPER_PODER > SUPER_PODER2 )
+     {
+        printf("!!!voce perdeu!!!\n");
+     }
+
+     if (SUPER_PODER < SUPER_PODER2)
+     {
+        printf("!!voce ganhou!!\n");
+     }
     break;
 
     default:
@@ -168,7 +195,7 @@ case 2:
     
     
     
-      }
+      
     }
 
 
