@@ -1,43 +1,47 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 
 int main() {
   int opcao;
-  int numeroSecreto, palpite;
+  float nota1, nota2, media;
 
-  printf("Menu Principal\n");
-  printf("1. Iniciar Jogo\n");
-  printf("2. Ver Regras\n");
+  // Exibição do menu
+  printf("Menu de Gerenciamento de Estudantes\n");
+  printf("1. Calcular Media\n");
+  printf("2. Determinar Status\n");
   printf("3. Sair\n");
   printf("Escolha uma opção: \n");
   scanf("%d", &opcao);
 
   switch (opcao) {
-    case 1:
-      srand(time(0));
-      numeroSecreto = rand() % 10 + 1;
-      printf("Adivinhe o número (entre 1 e 10): \n");
-      scanf("%d", &palpite);
+    case 1: printf("Calcular a Media\n");
+            printf("Digite a primeira nota:\n");
+            scanf("%f", &nota1);
+            printf("digite a segunda nota:\n");
+            scanf("%f", &nota2);
+            media = (nota1 + nota2) / 2;
+            printf("media = %.2f \n", media);
+    break;
 
-      if (palpite == numeroSecreto) {
-        printf("Parabéns! Você acertou!\n");
+    case 2: printf("Determinar Status\n");
+            printf("Digite a média do estudante: ");
+      scanf("%f", &media);
+
+      if (media >= 7.0) {
+        printf("Status: Aprovado\n");
+      } else if (media >= 5.0) {
+        printf("Status: Recuperação\n");
       } else {
-        printf("Você errou. O número era %d.\n", numeroSecreto);
+        printf("Status: Reprovado\n");
       }
-      break;
-    case 2:
-      printf("Regras do Jogo:\n");
-      printf("1. Escolha uma opção no menu.\n");
-      printf("2. Se você escolher 'Iniciar Jogo', adivinhe o número secreto.\n");
-      printf("3. O jogo termina quando você escolhe 'Sair'.\n");
-      break;
-    case 3:
-      printf("Saindo...\n");
-      break;
-    default:
-      printf("Opção inválida. Tente novamente.\n");
+    break;
+
+    case 3: printf("Sair do Programa\n");
+            printf("saindo...|n");
+
+    default: printf("Opção Invalida\n");
+
   }
 
-  return 0;
-}
+
+    return 0;
+  }
