@@ -133,57 +133,46 @@ srand(time(0));
     printf("resultado = %d\n",RESULTADO);
 
 
+char PrimeiroAtributo, SegundoAtributo;
+ int PontoJogador1 = 0, PontoJogador2 = 0;
 
 
 
-
-    printf("+++ ESCOLHA UMA OPÇÃO PARA DUELAR +++\n");
-printf("escolha uma opção\n");
+    printf("+++ ESCOLHA DUAS OPÇÕES PARA DUELAR +++\n");
+printf("ESCOLHA A PRIMEIRA OPÇÃO\n");
 
 printf("PRESSIONE '1' PARA PIB\n");
 printf("PRESSIONE '2' PARA SUPER PODER\n");
+printf("PRESSIONE '3' PARA NUMEROS DE PONTOS TURISTICOS");
 
-scanf("%d", &EscolhaJogador);
+scanf('%c',&PrimeiroAtributo);
 
-switch (EscolhaJogador)
-{
-case 1:
-     if (pib == pib2)
-     {
-        printf("!!! pib empatou!!!\n");
-     }
 
-     if  (pib > pib2)
-     {
-        printf("!!!voce perdeu!!!\n");
-     }
 
-     if (pib < pib2)
-     {
-        printf("!!voce ganhou!!\n");
-     }
 
-    break;
-case 2:
-    if (SUPER_PODER == SUPER_PODER2)
-     {
-        printf("!!! super poder empatou!!!\n");
-     }
+ switch (PrimeiroAtributo)
+ {
+ case '1':
+   printf("primeiro atributo é PIB\n");
+   PrimeiroAtributo = pib2;
+   pib2 > pib ? PontoJogador2 + 1 : PontoJogador1 + 1 ;
 
-     if  (SUPER_PODER > SUPER_PODER2 )
-     {
-        printf("!!!voce perdeu!!!\n");
-     }
+   break;
 
-     if (SUPER_PODER < SUPER_PODER2)
-     {
-        printf("!!voce ganhou!!\n");
-     }
-    break;
+ case '2':
+   printf("primeiro atributo é SUPER PODER\n");
+   PrimeiroAtributo = SUPER_PODER2;
+   SUPER_PODER2 > SUPER_PODER ? PontoJogador2 + 1 : PontoJogador1 + 1 ;
+   break;
 
-    default:
- printf("opção invalida\n");
-    break;
+
+ 
+ default:
+   break;
+ }
+
+
+
 
 
 
