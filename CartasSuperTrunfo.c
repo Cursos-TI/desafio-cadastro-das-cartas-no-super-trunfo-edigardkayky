@@ -128,71 +128,98 @@ srand(time(0));
 
     printf("SUPER PODER IGUAL A= %.2f \n",SUPER_PODER2);
 
-    printf("____AGORA VAMOS VER O VENCEDOR(se o resultado for '1' vc perdeu, se for '0' você ganhou)____\n");
+ // Escolhas de dois atributos para duelo
+    char atributo1, atributo2;
+    int pontosJogador = 0, pontosComputador = 0;
 
-    printf("resultado = %d\n",RESULTADO);
+    printf("\n+++ ESCOLHA DOIS ATRIBUTOS PARA DUELAR +++\n");
+    printf("1 - PIB\n");
+    printf("2 - Super Poder\n");
+    printf("3 - Pontos Turísticos\n");
+    printf("4 - PIB per Capita\n");
 
+    printf("Escolha o primeiro atributo (1-4): ");
+    scanf(" %c", &atributo1);
 
-char PrimeiroAtributo, SegundoAtributo;
- int PontoJogador1 = 0, PontoJogador2 = 0;
+    printf("Escolha o segundo atributo (1-4): ");
+    scanf(" %c", &atributo2);
 
+    // Função para duelo
+    char atributos[2] = {atributo1, atributo2};
+    for (int i = 0; i < 2; i++) {
+        switch (atributos[i]) {
+            case '1':
+                printf("\nDuelo %d: PIB\n", i + 1);
+                if (pib2 > pib) {
+                    printf("Você venceu este duelo!\n");
+                    pontosJogador++;
+                } else if (pib2 < pib) {
+                    printf("O computador venceu este duelo!\n");
+                    pontosComputador++;
+                } else {
+                    printf("Empate neste duelo!\n");
+                }
+                break;
 
+            case '2':
+                printf("\nDuelo %d: Super Poder\n", i + 1);
+                if (SUPER_PODER2 > SUPER_PODER) {
+                    printf("Você venceu este duelo!\n");
+                    pontosJogador++;
+                } else if (SUPER_PODER2 < SUPER_PODER) {
+                    printf("O computador venceu este duelo!\n");
+                    pontosComputador++;
+                } else {
+                    printf("Empate neste duelo!\n");
+                }
+                break;
 
-    printf("+++ ESCOLHA DUAS OPÇÕES PARA DUELAR +++\n");
-printf("ESCOLHA A PRIMEIRA OPÇÃO\n");
+            case '3':
+                printf("\nDuelo %d: Pontos Turísticos\n", i + 1);
+                if (numero_de_pontos_turisticos2 > numero_de_pontos_turisticos) {
+                    printf("Você venceu este duelo!\n");
+                    pontosJogador++;
+                } else if (numero_de_pontos_turisticos2 < numero_de_pontos_turisticos) {
+                    printf("O computador venceu este duelo!\n");
+                    pontosComputador++;
+                } else {
+                    printf("Empate neste duelo!\n");
+                }
+                break;
 
-printf("PRESSIONE '1' PARA PIB\n");
-printf("PRESSIONE '2' PARA SUPER PODER\n");
-printf("PRESSIONE '3' PARA NUMEROS DE PONTOS TURISTICOS");
+            case '4':
+                printf("\nDuelo %d: PIB per Capita\n", i + 1);
+                if (pib_per_capita2 > pib_per_capita) {
+                    printf("Você venceu este duelo!\n");
+                    pontosJogador++;
+                } else if (pib_per_capita2 < pib_per_capita) {
+                    printf("O computador venceu este duelo!\n");
+                    pontosComputador++;
+                } else {
+                    printf("Empate neste duelo!\n");
+                }
+                break;
 
-scanf('%c',&PrimeiroAtributo);
+            default:
+                printf("\nAtributo %d inválido. Nenhum ponto será atribuído.\n", i + 1);
+                break;
+        
+    }
 
+    // Resultado final
+    printf("\n===== RESULTADO FINAL =====\n");
+    printf("Seus pontos: %d\n", pontosJogador);
+    printf("Pontos do Computador: %d\n", pontosComputador);
 
-
-
- switch (PrimeiroAtributo)
- {
- case '1':
-   printf("primeiro atributo é PIB\n");
-   PrimeiroAtributo = pib2;
-   pib2 > pib ? PontoJogador2 + 1 : PontoJogador1 + 1 ;
-
-   break;
-
- case '2':
-   printf("primeiro atributo é SUPER PODER\n");
-   PrimeiroAtributo = SUPER_PODER2;
-   SUPER_PODER2 > SUPER_PODER ? PontoJogador2 + 1 : PontoJogador1 + 1 ;
-   break;
-
-
- 
- default:
-   break;
- }
-
-
-
-
-
-
-    
-    
-    
-      
-    
-    
-    
-    
-      
+    if (pontosJogador > pontosComputador) {
+        printf("🎉 Parabéns! Você venceu o jogo!\n");
+    } else if (pontosComputador > pontosJogador) {
+        printf("💻 O computador venceu o jogo!\n");
+    } else {
+        printf("🤝 Empate!\n");
     }
 
 
+    return 0
+  }
 
-
-
-
-    
-
-    return 0;
-}
